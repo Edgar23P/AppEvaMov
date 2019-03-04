@@ -20,9 +20,10 @@ import { connect } from "react-redux";
         NetInfo.isConnected.addEventListener('connectionChange', this.handleConnectivityChange);
         this.state.item =  (!this.state.isConnected) ? GetSubjectTimeHour() : null;
         if(this.state.item == null) ToastAndroid.show("ALERTA: ¡NADA ASIGNADO PARA ESTA HORA!", ToastAndroid.LONG)
+        /*
         const { navigationState, dispatch, isLoggedIn } = this.props;
         ToastAndroid.show(isLoggedIn+'',ToastAndroid.LONG);
-        
+        */
     }
 
     componentWillUnmount() {

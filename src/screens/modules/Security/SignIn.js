@@ -40,9 +40,10 @@ import { connect } from "react-redux";
             let signin = GetLogin(user, password);
             //aqui iniciar el redux
         }
-        */
-       const { navigationState, dispatch, isLoggedIn } = this.props;
+        const { navigationState, dispatch, isLoggedIn } = this.props;
        ToastAndroid.show(isLoggedIn+'',ToastAndroid.LONG);
+        */
+       
        this.props.login();
     };
 
